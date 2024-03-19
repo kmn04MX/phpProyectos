@@ -17,7 +17,7 @@ class DataBase{
         $this->db = 'aplicacionnotas';
         $this->user = 'root';
         $this->password = '5511';
-        $this->charset = 'utf8mb4';
+        $this->charset = 'utf8';
     }
 
     public function connect (){

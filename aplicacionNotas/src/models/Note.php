@@ -46,6 +46,16 @@ class Note extends DataBase {
         return $note;
     }
 
+    public static function getAll() {
+        $db = new DataBase();
+        $query = $db->connect()->query('SELECT * FROM notes');
+        $notes = [];
+        foreach ($query->fetchAll(PDO::FETCH_ASSOC) as $note) {
+            $notes[] = Note::createFromArray($note);
+        }
+        return $notes;
+    }
+
     public static function createFromArray($arr):Note{
         $note = new Note($arr['title'], $arr['content']);
         $note->setUuid($arr['uuid']);
