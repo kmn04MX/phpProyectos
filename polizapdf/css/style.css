@@ -1,0 +1,28 @@
+/*------------ Estilos para el navbar, checar en cabecera.php las clases ------------*/
+.div-flex
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-right{
+    margin-right: 28px;
+}
+
+/*------------------- Estilos para el logo -------------------*/
+
+.logo-mawdy{
+    width: 120px;
+}
+
+/*------------------- Estilos para el formulario -------------------*/
+
+.div-margin{
+    margin-top: 5px;
+
+}
+
+.div-margin__button{
+    margin-top: 16px;
+}
